@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+    <link rel="shortcut icon" type ="image/png" href="img/barbell.png">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: url('img/bg.jpg');
+    }
+
+    ul {
+        margin: 100px 300px;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        padding: 5px 23px;
+        padding-bottom: 20px;
+
+    }
+
+    h1 {
+        text-align: center;
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    li {
+        text-align: center;
+        list-style-type: none;
+        font-size: 30px;
+    }
+
+    .btn {
+        margin-left: 245px;
+        margin-top: 20px;
+        padding: 3px 50px;
+        border-radius: 15px;
+        border: none;
+        font-family: 'Baloo Bhai 2', cursive;
+        background-color: #1fd894;
+        /* font-weight: bold; */
+        font-size: 23px;
+
+    }
+
+    .btn:hover {
+        background-color: gray;
+        cursor: pointer;
+        color: black;
+    }
+
+    input {
+        border: 2px solid #ff2fa2;
+        padding: 15px;
+        border-radius: 15px;
+        
+    }
+
+    li ::placeholder {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+</style>
+
+
+<body>
+    <form action="calculate.php">
+        <ul>
+            <h1>Calculate your Body Mass Index (BMI)</h1>
+            <li>Select your gender <input type="radio" name="gender">Male <input type="radio" name="gender">Female</li>
+            <li>Enter your age: <input type="number" placeholder="your age"></li>
+            <li> Enter your Height: <input type="number" class="height" placeholder="in centimetre">
+            <li> Enter your weight: <input type="number" class="weight" placeholder="weight in kg"></li>
+            <button class="btn">Calculate</button>
+        </ul>
+    </form>
+</body>
+
+</html>
